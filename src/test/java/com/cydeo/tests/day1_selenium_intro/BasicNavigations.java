@@ -15,6 +15,7 @@ public class BasicNavigations {
         //2- Creat instance of the Selenium WebDriver
         // This is the line opening an empty browser
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
 
         // this line will maximize the broswer size
         driver.manage().window().maximize();
