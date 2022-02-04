@@ -24,12 +24,12 @@ public class T1_CydeoVerifications {
         //    Expected: cydeo
 
         String currentUrl = driver.getCurrentUrl();
-        String expected = "Cydeo";
+        String expected = "cydeo";
 
-        if(currentUrl.contains("cydeo")){
+        if(currentUrl.contains(expected)){
             System.out.println("URL contains \"cydeo\". Verification PASSED");
         }else{
-            System.out.println("URL does not contains \"cydeo\". Verification PASSED");
+            System.out.println("URL does not contains \"cydeo\". Verification FAILED");
         }
 
         //4. Verify title:
@@ -43,6 +43,8 @@ public class T1_CydeoVerifications {
         } else{
         System.out.println("Title is NOT as expected. Verification FAILED");
     }
+
+        driver.close();
 
 
 
